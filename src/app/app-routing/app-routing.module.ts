@@ -11,10 +11,10 @@ import { ItemComponent } from '../pages/item/item.component';
 
 
 const app_routes: Routes = [  //Declaro mi constante (Arreglo) para las rutas. Aquí le indico a mi código a dónde quiero navegar dependiendo de cada ruta escogida//
-    { path: '', component: PortafolioComponent}, //El portafolio component es la página principal//
+    { path: 'home', component: PortafolioComponent}, //El portafolio component es la página principal//
     { path: 'about', component: AboutComponent },
     { path: 'item', component: ItemComponent },
-    { path: '**', pathMatch: 'full', redirectTo: '' }  //Si se escribe cualquier cosa como una ruta, el navegador redigirá a la página principal o home. También se puede indicar colocando **. En este caso se está redireccionando a '' que es el portafolio//
+    { path: '**', pathMatch: 'full', redirectTo: 'home' }  //Si se escribe cualquier cosa como una ruta, el navegador redigirá a la página principal o home. También se puede indicar colocando **. En este caso se está redireccionando a '' que es el portafolio//
 ];
 
 @NgModule({
