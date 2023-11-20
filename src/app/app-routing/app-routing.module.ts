@@ -21,7 +21,7 @@ const app_routes: Routes = [  //Declaro mi constante (Arreglo) para las rutas. A
   declarations: [],
   imports: [
     //CommonModule,
-    RouterModule.forRoot(app_routes)
+    RouterModule.forRoot( app_routes, { useHash : true}) //En las rutas agrego el Hash. En el navegador por ejemplo aparecerá: localhost:4200/#/about. Lo que significa que después del # no viene un directorio sino parte de la propia ruta//
   ],
   exports: [
     RouterModule
