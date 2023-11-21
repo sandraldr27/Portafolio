@@ -1,5 +1,7 @@
+//Módulos//
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';  //A este módulo podremos hacerle peticiones HTTP//
 
 //Componentes//
 import { AppComponent } from './app.component';
@@ -23,7 +25,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule //A este módulo podremos hacerle peticiones HTTP//
   ],
   providers: [],
   bootstrap: [AppComponent]
