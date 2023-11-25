@@ -7,4 +7,6 @@ export interface InfoPagina {
   twitter?: string;
   tumblr?: string;
   equipo_trabajo?: any[];
+  facebook?: string;
+  pinterest?: string;
 }
